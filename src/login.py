@@ -1,3 +1,5 @@
+from vklib import VK
+
 '''
  Copyright (C) 2022  Arseniy Meserakov
 
@@ -15,5 +17,6 @@
 '''
 
 def login(number, passwd):
-      #TODO: Create vk api lib and make login functional
-      return None
+  client=VK("6146827qVxWRF1CwHERulrKBnqe", "client_secret")
+  client.auth(number, passwd)
+  client.wall.post(client.id, "UVK Client for Ubuntu touch test")
