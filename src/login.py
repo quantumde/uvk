@@ -17,6 +17,6 @@ from vklib import VK
 '''
 
 def login(number, passwd):
-  client=VK("6146827qVxWRF1CwHERulrKBnqe", "client_secret")
+  client=VK("6146827", "qVxWRF1CwHERulrKBnqe")
   client.auth(number, passwd)
   client.wall.post(client.id, "UVK Client for Ubuntu touch test")
